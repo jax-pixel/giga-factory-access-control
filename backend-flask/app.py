@@ -16,7 +16,7 @@ def check_badge():
 
    data = request.get_json()
 
-   badgenumber = data.get("badgenumber")
+   badge = data.get("badgenumber")
 
    # 2. Vérifier que les champs existent
 
@@ -33,7 +33,7 @@ def check_badge():
 
    conn.search(
        search_base=search_base,
-       search_filtrer=search_filter,
+       search_filter=search_filter,
        attributes=["uid"]
    )
 
